@@ -1,0 +1,9 @@
+# Tombolata
+
+> Tombola online gratuita in italiano. Un dispositivo apre il tabellone ed estrae i numeri da 1 a 90 con la smorfia napoletana (anche a voce); ogni giocatore apre da 1 a 6 cartelle sul proprio telefono, segna i numeri con un tocco e il sito segnala ambo, terno, quaterna, cinquina e tombola. Il banco può verificare una vincita dal numero della cartella. Senza app né registrazione; funziona anche in videochiamata.
+
+## Pagine
+- [Tabellone](https://strumentigratisitalia.github.io/StrumentiGratisItalia/tombolata/tabellone/): estrazione, smorfia, premi, codice QR per i giocatori, verifica delle vincite
+- [Cartelle](https://strumentigratisitalia.github.io/StrumentiGratisItalia/tombolata/cartelle/): da 1 a 6 cartelle valide (3 righe x 9 colonne, 15 numeri)
+- [Regole della tombola](https://strumentigratisitalia.github.io/StrumentiGratisItalia/tombolata/regole/): cartelle, premi, divisione del montepremi, varianti
+- [Smorfia napoletana 1-90](https://strumentigratisitalia.github.io/StrumentiGratisItalia/tombolata/smorfia/): significato di ogni numero in napoletano e italiano

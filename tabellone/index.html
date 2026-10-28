@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabellone della tombola online con smorfia napoletana | Tombolata</title>
+<meta name="description" content="Tabellone della tombola online gratis: estrai i numeri da 1 a 90, leggi la smorfia napoletana, fai chiamare i numeri ad alta voce e controlla le vincite delle cartelle.">
+<link rel="canonical" href="https://strumentigratisitalia.github.io/StrumentiGratisItalia/tombolata/tabellone/">
+<meta name="theme-color" content="#7a1626">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Tabellone della tombola online">
+<meta property="og:description" content="Estrai i numeri con la smorfia napoletana. Gli altri giocano dal telefono.">
+<meta property="og:image" content="https://strumentigratisitalia.github.io/StrumentiGratisItalia/tombolata/og.png">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Karla:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../">Tombolata</a>
+  <nav><a href="../cartelle/">Cartelle</a><a href="../regole/">Regole</a></nav>
+</header>
+<main>
+  <h1 class="sr" style="position:absolute;left:-999px">Tabellone della tombola</h1>
+  <div class="board-wrap">
+    <section class="caller" aria-label="Estrazione">
+      <div class="ball" id="ball" aria-live="assertive">?</div>
+      <p class="smorfia-now" id="smorfia">Premi Estrai per il primo numero.</p>
+      <button class="btn btn-gold" id="draw">Estrai</button>
+      <div class="last" id="last" role="group" aria-label="Ultimi numeri usciti"></div>
+      <p class="count" id="count">0 numeri usciti su 90</p>
+      <div class="toggles">
+        <label><input type="checkbox" id="voice"> Leggi ad alta voce</label>
+        <label><input type="checkbox" id="napo" checked> Smorfia</label>
+      </div>
+      <div class="toggles">
+        <button class="btn btn-ghost btn-small" id="undo">Annulla ultimo</button>
+        <button class="btn btn-ghost btn-small" id="reset">Nuova partita</button>
+      </div>
+      <div class="invite invite-qr">
+        <div id="qr" aria-hidden="true"></div>
+        <div>
+          <p><strong>Fai giocare gli altri.</strong> Inquadrano il codice con la fotocamera del telefono, oppure mandi il link nel gruppo.</p>
+          <button class="btn btn-paper btn-small" id="shareLink">Manda il link delle cartelle</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="board" id="board" aria-label="Tabellone dei numeri da 1 a 90"></div>
+
+      <div class="prizes">
+        <h2>Premi assegnati</h2>
+        <div class="prize-list" id="prizes"></div>
+      </div>
+
+      <div class="invite" style="grid-template-columns:1fr">
+        <div>
+          <p><strong>Controlla una vincita.</strong> Scrivi il numero della cartella di chi grida tombola: vedi subito se i numeri sono davvero usciti.</p>
+          <form id="check" style="display:flex;gap:8px;flex-wrap:wrap">
+            <input id="checkNum" inputmode="numeric" placeholder="Numero cartella" aria-label="Numero della cartella" style="flex:1 1 160px;min-height:44px;border-radius:10px;border:0;padding:0 12px;font:inherit">
+            <button class="btn btn-gold btn-small">Controlla</button>
+          </form>
+          <div id="checkOut" style="margin-top:14px"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="foot"><p><a href="../">Tombolata</a> <a href="../smorfia/">Smorfia napoletana 1-90</a> <a href="../privacy/">Privacy</a></p></footer>
+<script src="../vendor/qrcode.js"></script>
+<script src="../smorfia.js"></script>
+<script src="../cartella.js"></script>
+<script src="tabellone.js"></script>
+</body>
+</html>

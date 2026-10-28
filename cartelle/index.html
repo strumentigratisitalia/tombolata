@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cartelle della tombola online sul telefono | Tombolata</title>
+<meta name="description" content="Prendi da 1 a 6 cartelle della tombola sul tuo telefono, segna i numeri con un tocco e scopri subito se hai fatto ambo, terno, quaterna, cinquina o tombola. Gratis, senza app.">
+<link rel="canonical" href="https://strumentigratisitalia.github.io/StrumentiGratisItalia/tombolata/cartelle/">
+<meta name="theme-color" content="#7a1626">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Si gioca a tombola! Prendi le tue cartelle">
+<meta property="og:description" content="Da 1 a 6 cartelle sul telefono, si segna con i fagioli. Gratis, senza app.">
+<meta property="og:image" content="https://strumentigratisitalia.github.io/StrumentiGratisItalia/tombolata/og-cartelle.png">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Karla:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../">Tombolata</a>
+  <nav><a href="../tabellone/">Tabellone</a><a href="../regole/">Regole</a></nav>
+</header>
+<main>
+  <section class="setup" id="setup" hidden>
+    <h1 style="font:1.9rem/1.1 var(--display);color:var(--felt);margin:0 0 8px">Quante cartelle giochi?</h1>
+    <p>Di solito ogni cartella costa una piccola posta, da decidere con il gruppo. Più cartelle hai, più numeri da seguire.</p>
+    <div class="pick" id="pick" role="group" aria-label="Numero di cartelle"></div>
+    <button class="btn btn-gold" id="start" style="width:100%">Prendi le cartelle</button>
+  </section>
+
+  <section id="game" hidden>
+    <div class="player-top">
+      <h1>Le tue cartelle</h1>
+      <span id="status" class="count"></span>
+    </div>
+    <div class="cards" id="cards"></div>
+    <div class="player-tools">
+      <button class="btn btn-ghost btn-small" id="clear">Togli tutti i fagioli</button>
+      <button class="btn btn-ghost btn-small" id="new">Cartelle nuove</button>
+      <a class="btn btn-ghost btn-small" href="../tabellone/">Fai tu il tabellone</a>
+    </div>
+    <p class="choice-note">Se gridi tombola, chi ha il tabellone può controllare la tua cartella con il suo numero.</p>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <strong id="toastTitle"></strong>
+  <span id="toastText"></span>
+  <button class="btn btn-paper btn-small" id="toastShare">Condividi</button>
+</div>
+
+<footer class="foot"><p><a href="../">Tombolata</a> <a href="../smorfia/">Smorfia napoletana</a> <a href="../privacy/">Privacy</a></p></footer>
+<script src="../cartella.js"></script>
+<script src="cartelle.js"></script>
+</body>
+</html>
